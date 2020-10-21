@@ -22,7 +22,8 @@ Connecting AWS account with CLI: Creation of new instance, Keypair, security-gro
 
 ![](images/genrated_key_decription.png)
 
-- Security Group Command : aws ec2 create-security-group --group-name mygroupsecurity --description "security group"
+- Security Group Command : aws ec2 create-security-group --group-name mygroupsecurity --description "security group" 
+- Add the Authorization in Security Group : aws ec2 authorize-security-group-ingress --group-id sg-0768517209a4f9d55 --protocol ssh --port 22 --cidr 152.57.28.72/32
 
 ![](images/Create_Security_group.png)
 
@@ -34,9 +35,11 @@ Connecting AWS account with CLI: Creation of new instance, Keypair, security-gro
 
 ![](images/launch_os_in_cli.png)
 
+- Description Of Instance : aws ec2 describe-instances --instance-ids i-0d24f9a3d4cb5a525
+
 ![](images/Running_of_created_os_awscli.png)
 
-- Create Volume Command : aws ec2 create-volume --size --encrypted  --availability-zone  ap-south-1b  
+- Create Volume Command : aws ec2 create-volume --size 1 --encrypted  --availability-zone  ap-south-1b  
 
 ![](images/Create_volume_cli.png)
 
@@ -44,4 +47,6 @@ Connecting AWS account with CLI: Creation of new instance, Keypair, security-gro
 
 ![](images/Attach_volume_instance.png)
 
+
+Thank you Sir..!!!
 
